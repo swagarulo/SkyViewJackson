@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Netlify Forms</title></head>
+<body>
+  <!-- Listing inquiry form (used on listing detail pages) -->
+  <form name="listing-inquiry" data-netlify="true" hidden>
+    <input name="form-name" type="hidden" value="listing-inquiry" />
+    <input name="listing" type="hidden" />
+    <input name="name" type="text" />
+    <input name="email" type="email" />
+    <input name="phone" type="tel" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <!-- General contact form (used on /contact page) -->
+  <form name="contact-general" data-netlify="true" hidden>
+    <input name="form-name" type="hidden" value="contact-general" />
+    <input name="name" type="text" />
+    <input name="email" type="email" />
+    <input name="phone" type="tel" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>
