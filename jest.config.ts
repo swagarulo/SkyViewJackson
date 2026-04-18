@@ -7,6 +7,9 @@ const config: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  moduleNameMapper: {
+    '^sanity$': '<rootDir>/src/__mocks__/sanity.ts',
+  },
 }
 
 export default createJestConfig(config)

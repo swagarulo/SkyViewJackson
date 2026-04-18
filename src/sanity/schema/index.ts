@@ -1,14 +1,8 @@
-// TODO: Uncomment these imports once schema files are created in Tasks 3 & 4
-// import { listing } from './listing'
-// import { testimonial } from './testimonial'
-// import { galleryProject } from './galleryProject'
-// import { siteSettings } from './siteSettings'
+import { listing } from './listing'
+// import { testimonial } from './testimonial'  // Task 4
+// import { galleryProject } from './galleryProject'  // Task 4
+// import { siteSettings } from './siteSettings'  // Task 4
 
 export const schema = {
-  types: [
-    // listing,
-    // testimonial,
-    // galleryProject,
-    // siteSettings,
-  ],
+  types: [listing],
 }
