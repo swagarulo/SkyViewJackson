@@ -2,6 +2,8 @@ import { ListingCard } from '@/components/ListingCard'
 import { getSoldListings } from '@/sanity/queries'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Sold Homes | Sky View Homes',
   description: 'View our track record of sold homes in Jackson, Tennessee.',

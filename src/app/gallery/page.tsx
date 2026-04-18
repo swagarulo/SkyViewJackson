@@ -3,6 +3,8 @@ import { urlFor } from '@/sanity/image'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Gallery | Sky View Homes',
   description: 'Browse our project gallery showcasing quality construction in Jackson, TN.',

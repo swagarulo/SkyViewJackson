@@ -1,3 +1,5 @@
+export const revalidate = 3600
+
 import { HeroSection } from '@/components/HeroSection'
 import { ListingCard } from '@/components/ListingCard'
 import { TestimonialCard } from '@/components/TestimonialCard'

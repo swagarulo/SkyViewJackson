@@ -2,6 +2,8 @@ import { ContactForm } from '@/components/ContactForm'
 import { getSiteSettings } from '@/sanity/queries'
 import type { Metadata } from 'next'
 
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: 'Contact | Sky View Homes',
   description: 'Contact Sky View Homes or Mari Acuna to inquire about listings in Jackson, TN.',
@@ -20,7 +22,7 @@ export default async function ContactPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <h2 className="text-2xl font-bold text-[#1a2744] mb-6" style={{ fontFamily: 'var(--font-serif)' }}>Send Us a Message</h2>
-          <ContactForm />
+          <ContactForm formName="contact-general" />
         </div>
         <div>
           <h2 className="text-2xl font-bold text-[#1a2744] mb-6" style={{ fontFamily: 'var(--font-serif)' }}>Contact Information</h2>

@@ -5,8 +5,17 @@ import { Footer } from '@/components/Footer'
 import { getSiteSettings } from '@/sanity/queries'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://skyviewhomestn.com'),
   title: 'Sky View Homes | New Construction in Jackson, TN',
   description: 'Premier new home builder in Jackson, Tennessee. Quality craftsmanship for over 20 years. View active listings and contact Mari Acuna today.',
+  openGraph: {
+    title: 'Sky View Homes | New Construction in Jackson, TN',
+    description: 'Premier new home builder in Jackson, Tennessee. Quality craftsmanship for over 20 years.',
+    url: 'https://skyviewhomestn.com',
+    siteName: 'Sky View Homes',
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
