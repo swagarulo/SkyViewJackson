@@ -16,8 +16,12 @@ export default async () => {
   return {
     ...config,
     moduleNameMapper: {
-      ...config.moduleNameMapper,
       '^sanity$': '<rootDir>/__mocks__/sanity.ts',
+      '^@/sanity/image$': '<rootDir>/__mocks__/sanity-image.js',
+      '^@sanity/image-url(.*)$': '<rootDir>/__mocks__/sanity-image.js',
+      '^next-sanity(.*)$': '<rootDir>/__mocks__/next-sanity.ts',
+      '.*/src/sanity/image(\\.ts)?$': '<rootDir>/__mocks__/sanity-image.js',
+      ...config.moduleNameMapper,
     },
   }
 }
