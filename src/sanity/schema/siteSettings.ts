@@ -13,6 +13,6 @@ export const siteSettings = defineType({
     defineField({ name: 'heroHeadline', title: 'Hero Headline', type: 'string' }),
     defineField({ name: 'heroSubtext', title: 'Hero Subtext', type: 'string' }),
   ],
-  // Prevent creation of duplicate singleton documents in Sanity Studio
-  __experimental_actions: ['update', 'publish'],
+  // NOTE: Only one siteSettings document should ever be created in Sanity Studio.
+  // The getSiteSettings() query uses [0] to read the first document.
 })
