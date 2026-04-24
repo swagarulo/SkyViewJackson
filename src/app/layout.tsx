@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const settings = await getSiteSettings().catch(() => null)
-  const phone = settings?.phone ?? '731-444-1665'
+  const phone = settings?.phone ?? '901-500-9827'
   const address = settings?.address ?? '180 E Main St, Jackson, TN 38301'
 
   return (
